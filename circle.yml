@@ -3,6 +3,8 @@ machine:
     Asia/Tokyo
   node:
     version: 4.6.1
+  post:
+    - npm install -g npm@3
 deployment:
   production:
     branch: source
