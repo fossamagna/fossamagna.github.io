@@ -3,14 +3,16 @@ machine:
     Asia/Tokyo
   node:
     version: 4.6.1
+checkout:
+  post:
+    - git submodule init
+    - git submodule update
 deployment:
   production:
     branch: source
     commands:
       - git config --global user.name "Circle CI"
       - git config --global user.email "fossamagna2+circleci@gmail.com"
-      - git submodule init
-      - git submodule update
       - npm run delopy
 general:
   branches:
