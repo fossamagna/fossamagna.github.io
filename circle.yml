@@ -5,8 +5,8 @@ machine:
     version: 4.6.1
 checkout:
   post:
-    - git submodule init
-    - git submodule update
+    - git submodule sync
+    - git submodule update --init
 deployment:
   production:
     branch: source
