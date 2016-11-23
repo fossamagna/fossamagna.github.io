@@ -18,7 +18,7 @@ Node DiscussionではNode.js(JavaScript)に関してGood Point, Bad Point, Wishl
 後日、Twitterを見ていると Wishlist に対する回答が [@bmeckの回答](https://gist.github.com/bmeck/acfa3f54e779d718f49f9ad2ec15aff7) から出ていました。当日付箋に書かれた内容一つ一つにちゃんと回答してくれていて本当にありがたいなと思います。私もNode.jsでアーカイブファイルがあるといいなということを書いたのですが、それに対しても回答があり、[node-loader](https://github.com/bmeck/noda-loader)というモジュール(知らなかった)やNode.jsでのやり取りにissueへのリンクもあってとても参考になりました。
 
 Node Descussionで出た意見：
-<img src="images/nodefest2016/node_discussion_good_point.jpg" width="200px"/><img src="images/nodefest2016/node_discussion_bad_point.jpg" width="200px"/><img src="images/nodefest2016/node_discussion_wishlist.jpg" width="200px"/>
+<img src="/images/nodefest2016/node_discussion_good_point.jpg" width="200px"/><img src="/images/nodefest2016/node_discussion_bad_point.jpg" width="200px"/><img src="/images/nodefest2016/node_discussion_wishlist.jpg" width="200px"/>
 
 Code And Learn は実際に Node.js の core にコントリビュートしてみようというワークショップです。初めての人でも事前にコントリビュートできそうなポイントを[リストアップ](https://github.com/nodejs/code-and-learn/issues/58)されていたので、参加者がその中から自分が貢献できそうなものに対して実際に修正して Pull Request を出してみるというところまでを体験しました。
 Pull Request を出すとTシャツがもらえるという特典付きだったので俄然やる気になりました！
