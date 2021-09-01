@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `fossamagna's Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Masahiko MURAKAMI`,
+      // summary: `who lives and works in San Francisco building useful things.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `fossamagna's Blog`,
+    siteUrl: `https://fossamagna.github.io//`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `fossamagna`,
     },
   },
   plugins: [
@@ -112,8 +112,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `fossamagna's Blog`,
+        short_name: `fossamagna's Blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
