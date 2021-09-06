@@ -34,8 +34,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
 
-  console.log(JSON.stringify(result, null, 2))
-
   const posts = result.data.allMdx.nodes
 
   // Create blog posts pages
