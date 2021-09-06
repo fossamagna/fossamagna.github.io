@@ -47,7 +47,8 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
-        ],
+          '@fec/remark-a11y-emoji/gatsby',
+        ]
       },
     },
     `gatsby-transformer-sharp`,

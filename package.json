@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Masahiko MURAKAMI <fossamagna2@gmail.com>",
   "dependencies": {
+    "@fec/remark-a11y-emoji": "^3.1.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "gatsby": "^3.11.1",
