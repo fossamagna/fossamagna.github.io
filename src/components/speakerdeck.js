@@ -7,7 +7,7 @@ const Speakerdeck = props => {
     width: "100%",
     height: 0,
     position: "relative",
-    paddingBottom: "75.1972%",
+    paddingBottom: props.paddingBottom || "75.1972%",
   }
   const iframeStyle = {
     border: 0,
@@ -31,6 +31,7 @@ const Speakerdeck = props => {
 Speakerdeck.propTypes = {
   slideId: PropTypes.string.isRequired,
   title: PropTypes.string,
+  paddingBottom: PropTypes.string,
 }
 
 export default Speakerdeck
