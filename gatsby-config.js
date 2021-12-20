@@ -1,3 +1,5 @@
+const codeGithub = require("remark-code-github").default;
+
 module.exports = {
   siteMetadata: {
     title: `fossamagna's Blog`,
@@ -6,7 +8,7 @@ module.exports = {
       // summary: `who lives and works in San Francisco building useful things.`,
     },
     description: `fossamagna's Blog`,
-    siteUrl: `https://fossamagna.github.io//`,
+    siteUrl: `https://fossamagna.github.io/`,
     social: {
       twitter: `fossamagna`,
     },
@@ -48,7 +50,14 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           '@fec/remark-a11y-emoji/gatsby',
-        ]
+          {
+            resolve: `gatsby-remark-link-unfurl`,
+            options: {
+              processedUrlsFile: `${__dirname}/link-cache/cache.json`,
+            },
+          },
+        ],
+        remarkPlugins: [codeGithub],
       },
     },
     `gatsby-transformer-sharp`,
