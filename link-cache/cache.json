@@ -8,5 +8,15 @@
     },
     "logo": "https://github.githubassets.com/favicons/favicon.svg",
     "site": "GitHub"
+  },
+  "https://github.com/aws-amplify/amplify-cli/pull/9601": {
+    "title": "Allow 3rd-party plugin to CDK override by fossamagna · Pull Request #9601 · aws-amplify/amplify-cli",
+    "description": "Description of changes\nAllow 3rd-party plugin to CDK override. Some restricted points to starts with @aws-amplify/amplify-category- literal changed to use package location in pluginInfo.\n\nIssue #, ...",
+    "url": "https://github.com/aws-amplify/amplify-cli/pull/9601",
+    "image": {
+      "url": "https://opengraph.githubassets.com/7683ce4b22c92036fc999eb5683c2826cf3d01e677beea7d3cf11d2cd0bc52f9/aws-amplify/amplify-cli/pull/9601"
+    },
+    "logo": "https://github.githubassets.com/favicons/favicon.svg",
+    "site": "GitHub"
   }
 }
