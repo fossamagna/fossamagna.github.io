@@ -6,8 +6,8 @@
   "author": "Masahiko MURAKAMI <fossamagna2@gmail.com>",
   "dependencies": {
     "@fec/remark-a11y-emoji": "3.1.0",
-    "@mdx-js/mdx": "1.6.22",
-    "@mdx-js/react": "1.6.22",
+    "@mdx-js/mdx": "2.1.3",
+    "@mdx-js/react": "2.1.3",
     "gatsby": "4.22.1",
     "gatsby-plugin-feed": "4.22.0",
     "gatsby-plugin-gatsby-cloud": "4.22.0",
