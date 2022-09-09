@@ -74,56 +74,48 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-feed-mdx`,
+      resolve: `gatsby-plugin-feed`,
       options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
         feeds: [
           {
-            serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.nodes.map(node => {
-                return Object.assign({}, node.frontmatter, {
-                  description: node.excerpt,
-                  date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
-                })
-              })
-            },
+            serialize: ({ query: { site, allMdx } }) =>
+              allMdx.edges.map(edge => {
+                return {
+                  ...edge.node.frontmatter,
+                  description: edge.node.excerpt,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                }
+              }),
             query: `
-              {
-                allMdx(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  nodes {
-                    excerpt
-                    html
-                    fields {
-                      slug
-                    }
+            {
+              allMdx(
+                limit: 1000,
+                sort: {
+                  order: DESC,
+                  fields: [frontmatter___date]
+                }
+              ) {
+                edges {
+                  node {
                     frontmatter {
                       title
                       date
                     }
+                    fields {
+                      slug
+                    }
+                    excerpt
                   }
                 }
               }
-            `,
-            output: "/rss.xml",
+            }
+          `,
+          title: "fossamagna's Blog RSS Feed",
+            output: `rss.xml`,
           },
         ],
-      },
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,

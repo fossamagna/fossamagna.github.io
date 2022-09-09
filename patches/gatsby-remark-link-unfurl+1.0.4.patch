@@ -1,0 +1,13 @@
+diff --git a/node_modules/gatsby-remark-link-unfurl/dist/index.js b/node_modules/gatsby-remark-link-unfurl/dist/index.js
+index e4c14f2..b582e4e 100644
+--- a/node_modules/gatsby-remark-link-unfurl/dist/index.js
++++ b/node_modules/gatsby-remark-link-unfurl/dist/index.js
+@@ -45,7 +45,7 @@ var path = require('path');
+ var selectPossibleLinkNodes_1 = require("./selectPossibleLinkNodes");
+ var logResults_js_1 = __importDefault(require("./logResults.js"));
+ var transformLinkToUnfurledNode_1 = require("./transformLinkToUnfurledNode");
+-exports.default = (function (_a, rawOptions) {
++module.exports = (function (_a, rawOptions) {
+     var markdownAST = _a.markdownAST, markdownNode = _a.markdownNode, cache = _a.cache, reporter = _a.reporter;
+     return __awaiter(void 0, void 0, void 0, function () {
+         var options_1, processedUrlsJSON_1, processedUrlsFile, nodes, results, error_1;
