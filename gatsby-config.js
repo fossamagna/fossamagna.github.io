@@ -1,4 +1,4 @@
-const codeGithub = require("remark-code-github").default;
+const codeGithub = require("remark-code-github").default
 
 module.exports = {
   siteMetadata: {
@@ -49,7 +49,7 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
-          '@fec/remark-a11y-emoji/gatsby',
+          "@fec/remark-a11y-emoji/gatsby",
           {
             resolve: `gatsby-remark-link-unfurl`,
             options: {
@@ -70,8 +70,8 @@ module.exports = {
         ],
         pluginConfig: {
           head: true,
-        }
-      }
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-feed`,
@@ -111,11 +111,11 @@ module.exports = {
               }
             }
           `,
-          title: "fossamagna's Blog RSS Feed",
+            title: "fossamagna's Blog RSS Feed",
             output: `rss.xml`,
           },
         ],
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
