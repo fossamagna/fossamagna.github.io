@@ -26,6 +26,7 @@
     "gatsby-remark-smartypants": "5.22.0",
     "gatsby-source-filesystem": "4.22.0",
     "gatsby-transformer-sharp": "4.22.0",
+    "patch-package": "^6.4.7",
     "prismjs": "1.24.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -54,6 +55,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "postinstall": "patch-package"
   }
 }
