@@ -4,7 +4,19 @@ import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import { Head as HeaeComponent } from "../components/head"
+
+export const Head = ({ data, ...rest }) => {
+  const post = data.mdx
+  return (
+    <HeaeComponent
+      data={data}
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt}
+      {...rest}
+    ></HeaeComponent>
+  )
+}
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.mdx
@@ -12,10 +24,6 @@ const BlogPostTemplate = ({ data, location }) => {
   const { previous, next } = data
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
       <article
         className="blog-post"
         itemScope
