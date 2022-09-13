@@ -6,6 +6,8 @@
   "author": "Masahiko MURAKAMI <fossamagna2@gmail.com>",
   "dependencies": {
     "@fec/remark-a11y-emoji": "3.1.0",
+    "@fontsource/merriweather": "^4.5.13",
+    "@fontsource/montserrat": "^4.5.12",
     "@mdx-js/react": "2.1.3",
     "gatsby": "4.22.1",
     "gatsby-plugin-feed": "4.22.0",
@@ -33,9 +35,7 @@
     "remark-code-github": "0.1.0",
     "remark-footnotes": "3.0.0",
     "remark-gfm": "1.0.0",
-    "remark-rehype": "8.1.0",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75"
+    "remark-rehype": "8.1.0"
   },
   "devDependencies": {
     "prettier": "2.7.1"
