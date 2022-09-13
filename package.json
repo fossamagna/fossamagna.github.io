@@ -34,8 +34,8 @@
     "remark-footnotes": "3.0.0",
     "remark-gfm": "1.0.0",
     "remark-rehype": "8.1.0",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75"
+    "typeface-merriweather": "1.1.13",
+    "typeface-montserrat": "1.1.13"
   },
   "devDependencies": {
     "prettier": "2.7.1"
