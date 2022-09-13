@@ -1,5 +1,15 @@
 const codeGithub = require("remark-code-github").default
 
+
+const wrapESMPlugin = name =>
+  function wrapESM(opts) {
+    return async (...args) => {
+      const mod = await import(name)
+      const plugin = mod.default(opts)
+      return plugin(...args)
+    }
+  }
+
 module.exports = {
   siteMetadata: {
     title: `fossamagna's Blog`,
@@ -46,7 +56,12 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              noInlineHighlight: true,
+            },
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           "@fec/remark-a11y-emoji/gatsby",
@@ -57,7 +72,19 @@ module.exports = {
             },
           },
         ],
-        remarkPlugins: [codeGithub],
+        mdxOptions: {
+          remarkRehypeOptions: {
+            footnoteLabel: '脚注',
+          },
+          remarkPlugins: [
+            require(`remark-gfm`),
+            require(`remark-footnotes`),
+            codeGithub,
+          ],
+          rehypePlugins: [
+            wrapESMPlugin(`rehype-slug`),
+          ],
+        },
       },
     },
     `gatsby-transformer-sharp`,

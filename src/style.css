@@ -439,3 +439,9 @@ a.gatsby-remark-link-unfurl__container:hover {
   height: 25px;
   background-size: contain;
 }
+
+/* remark-footnotes */
+
+.footnotes p {
+  display: inline;
+}
