@@ -33,9 +33,9 @@
     "react-helmet": "6.1.0",
     "rehype-slug": "4.0.1",
     "remark-code-github": "0.1.0",
-    "remark-footnotes": "3.0.0",
-    "remark-gfm": "1.0.0",
-    "remark-rehype": "8.1.0"
+    "remark-footnotes": "4.0.1",
+    "remark-gfm": "3.0.1",
+    "remark-rehype": "10.1.0"
   },
   "devDependencies": {
     "prettier": "2.7.1"
