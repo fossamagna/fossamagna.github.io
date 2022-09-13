@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -18,7 +17,7 @@ export const Head = ({ data, ...rest }) => {
   )
 }
 
-const BlogPostTemplate = ({ data, location }) => {
+const BlogPostTemplate = ({ data, location, children }) => {
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
@@ -33,7 +32,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
-        <MDXRenderer>{post.body}</MDXRenderer>
+        {children}
         <hr />
         <footer>
           <Bio />
@@ -72,7 +71,7 @@ const BlogPostTemplate = ({ data, location }) => {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug(
+  query (
     $id: String!
     $previousPostId: String
     $nextPostId: String
@@ -85,7 +84,6 @@ export const pageQuery = graphql`
     mdx(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
-      body
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
