@@ -108,42 +108,7 @@ amplify pull
 
 値の設定はamplifyコマンドを使います。`amplify function update`で以下のようにシークレットの値を設定します。
 
-```console
-% amplify function update
-? Select the Lambda function you want to update slackApp
-General information
-- Name: slackApp
-- Runtime: nodejs
-
-Resource access permission
-- Not configured
-
-Scheduled recurring invocation
-- Not configured
-
-Lambda layers
-- Not configured
-
-Environment variables:
-- Not configured
-
-Secrets configuration
-- SLACK_SIGNING_SECRET
-- SLACK_BOT_TOKEN
-- SLACK_DEFAULT_CHANNEL
-
-? Which setting do you want to update? Secret values configuration
-? What do you want to do? Update a secret
-? Select the secret to update: SLACK_SIGNING_SECRET
-? Enter the value for SLACK_SIGNING_SECRET: [hidden]
-? What do you want to do? Update a secret
-? Select the secret to update: SLACK_BOT_TOKEN
-? Enter the value for SLACK_BOT_TOKEN: [hidden]
-? What do you want to do? Update a secret
-? Select the secret to update: SLACK_DEFAULT_CHANNEL
-? Enter the value for SLACK_DEFAULT_CHANNEL: [hidden]
-? What do you want to do? I'm done
-```
+![register-parameter-values](./register-parameter-values.gif)
 
 #### `amplify/backend/function/slackApp/parameters.json`の編集
 
