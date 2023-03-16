@@ -9,7 +9,7 @@
     "@fontsource/merriweather": "4.5.14",
     "@fontsource/montserrat": "4.5.13",
     "@mdx-js/react": "2.1.3",
-    "gatsby": "4.22.1",
+    "gatsby": "4.25.4",
     "gatsby-plugin-feed": "4.22.0",
     "gatsby-plugin-gatsby-cloud": "4.22.0",
     "gatsby-plugin-google-gtag": "4.22.0",
