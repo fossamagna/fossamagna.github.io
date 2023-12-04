@@ -13,8 +13,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 14.x
-      - name: Use the latest npm
-        run: npm i -g npm
       - name: Run npm install
         run: npm ci
       - name: Run Build App
