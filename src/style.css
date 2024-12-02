@@ -94,6 +94,10 @@ hr {
   border: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Heading */
 
 h1,
@@ -346,7 +350,8 @@ a.gatsby-remark-link-unfurl__container {
   border-color: #e1e8ed;
   overflow: hidden;
   color: #181919;
-  font-family: InterUI, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
   display: flex;
   text-decoration: none;
   opacity: 1;
