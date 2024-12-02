@@ -3,7 +3,7 @@ title: Amplify Gen2 Sandboxをもっと便利に使う
 date: "2024-12-02T12:00:00+09:00"
 ---
 
-この記事は [AWS Amplify と AWS× フロントエンド #AWSAmplifyJP Advent Calendar 2024](https://qiita.com/advent-calendar/2024/amplify)、[ESM Advent Calendar 2024](https://adventar.org/calendars/10806) の 2 日目の記事です。
+この記事は [AWS Amplify と AWS× フロントエンド #AWSAmplifyJP Advent Calendar 2024](https://qiita.com/advent-calendar/2024/amplify)、[AWS Community Builders Advent Calendar 2024 シリーズ 2](https://qiita.com/advent-calendar/2024/aws-community-builders)、[ESM Advent Calendar 2024](https://adventar.org/calendars/10806) の 2 日目の記事です。
 
 ## Amplify Gen2 GA
 
