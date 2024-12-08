@@ -38,7 +38,7 @@
     "remark-rehype": "8.1.0"
   },
   "devDependencies": {
-    "prettier": "2.7.1"
+    "prettier": "3.4.2"
   },
   "homepage": "https://github.com/fossamagna/fossamagna.github.io#readme",
   "keywords": [
