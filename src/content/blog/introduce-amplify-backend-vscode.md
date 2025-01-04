@@ -49,7 +49,7 @@ Amplify コンソールでは Git ブランチに紐づいた共有環境の場�
 
 この VSCode 拡張の`Amplify Backend Expoloer`を利用すると、以下のように自身の sandbox 環境の AWS リソースのみをツリー表示できます。ツリーのノードは sandbox 環境内の AWS リソースに対応していて、それを選択して対象のリソースの AWS コンソールを開くこともできます。
 
-![Amplify Backend Explorer](../../assets/introduce-amplify-backend-vscode/explorer.gif)
+![Amplify Backend Explorer](/introduce-amplify-backend-vscode/explorer.gif)
 
 この VSCode 拡張を使うと自身の sandbox の AWS リソースのみを参照できるので、AWS コンソールで sandbox 環境のリソースを探すのに苦労することがなくなりました。
 
