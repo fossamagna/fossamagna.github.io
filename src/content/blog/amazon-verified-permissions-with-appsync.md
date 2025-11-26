@@ -4,7 +4,8 @@ pubDate: "2025-11-26T23:13:00+09:00"
 description: "JAWS FESTA 2025 in Kanazawaで発表した、Amazon Verified Permissions(AVP)とCedarポリシー言語を活用してAWS AppSyncに複雑な認可処理を実装した事例を紹介します。"
 ---
 
-この記事は、2025年10月11日に開催された [JAWS FESTA 2025 in Kanazawa](https://jawsfesta2025.jaws-ug.jp/) での発表内容「Amazon Verified Permissions 実践入門 〜Cedar活用とAppSync導入事例〜」をベースにしたものです。
+この記事は、2025年10月11日に開催された [JAWS FESTA 2025 in Kanazawa](https://jawsfesta2025.jaws-ug.jp/) での発表 [Amazon Verified Permissions 実践入門 〜Cedar活用とAppSync導入事例〜](https://speakerdeck.com/fossamagna/practical-introduction-to-amazon-verified-permissions) をベースにしたものです。
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/96089e6b1cff4e2a89ffdd70ec980c02" title="Amazon Verified Permissions実践入門  〜Cedar活用とAppSync導入事例/Practical Introduction to Amazon Verified Permissions" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
 
 ## 概要
 
