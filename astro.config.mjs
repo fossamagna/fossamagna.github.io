@@ -5,10 +5,12 @@ import sitemap from "@astrojs/sitemap";
 import remarkLinkCard from "remark-link-card";
 import remarkCodeGithub from "remark-code-github";
 
+import react from "@astrojs/react";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://fossamagna.github.io",
-  integrations: [mdx(), sitemap()],
+  integrations: [mdx(), sitemap(), react()],
   markdown: {
     remarkPlugins: [
       [
