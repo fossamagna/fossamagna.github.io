@@ -2,6 +2,7 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import "../styles/global.css";
+import Gtm from "./Gtm.astro";
 
 interface Props {
   title: string;
@@ -9,24 +10,14 @@ interface Props {
   image?: string;
 }
 
+const isProd = import.meta.env.PROD;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, image = "./ogp.png" } = Astro.props;
 ---
 
 <!-- Google Tag Manager -->
-<script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-PDR994WX");
-</script>
+{isProd && <Gtm/>}
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
