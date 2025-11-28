@@ -18,9 +18,15 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.3",
+    "@astrojs/react": "^4.4.2",
     "@astrojs/rss": "^4.0.10",
     "@astrojs/sitemap": "^3.2.1",
-    "astro": "^5.1.1"
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vercel/og": "^0.8.5",
+    "astro": "^5.1.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "remark-code-github": "^0.2.1",
