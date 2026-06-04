@@ -4,6 +4,7 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import remarkLinkCard from "remark-link-card";
 import remarkCodeGithub from "remark-code-github";
+import { unified } from "@astrojs/markdown-remark";
 
 import react from "@astrojs/react";
 
@@ -12,16 +13,18 @@ export default defineConfig({
   site: "https://fossamagna.github.io",
   integrations: [mdx(), sitemap(), react()],
   markdown: {
-    remarkPlugins: [
-      [
-        remarkLinkCard,
-        {
-          cache: false,
-          shortenUrl: false,
-        },
+    processor: unified({
+      remarkPlugins: [
+        [
+          remarkLinkCard,
+          {
+            cache: false,
+            shortenUrl: false,
+          },
+        ],
+        remarkCodeGithub,
       ],
-      remarkCodeGithub,
-    ],
+    }),
   },
   redirects: {
     "/": "/blog",
