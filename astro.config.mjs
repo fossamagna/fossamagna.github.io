@@ -27,7 +27,6 @@ export default defineConfig({
     }),
   },
   redirects: {
-    "/": "/blog",
     "/allow-3rd-party-plugin-to-amplify-override":
       "/blog/allow-3rd-party-plugin-to-amplify-override",
     "/anatomy-of-amplify-override": "/blog/anatomy-of-amplify-override",
