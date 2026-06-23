@@ -29,6 +29,15 @@ const skills = [
       .hero {
         padding: 2rem 0 2rem 0;
       }
+      .hero .avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1.25rem;
+        border: 3px solid white;
+        box-shadow: var(--box-shadow);
+      }
       .hero .eyebrow {
         margin: 0 0 0.5rem 0;
         color: rgb(var(--gray));
@@ -165,6 +174,15 @@ const skills = [
     <Header />
     <main>
       <section class="hero">
+        <img
+          class="avatar"
+          src="https://github.com/fossamagna.png"
+          width="120"
+          height="120"
+          alt="Masahiko Murakami"
+          loading="eager"
+          decoding="async"
+        />
         <p class="eyebrow">Software Developer</p>
         <h1>Masahiko Murakami</h1>
         <p class="tagline">
