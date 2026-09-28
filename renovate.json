@@ -2,5 +2,12 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
+  ],
+  "packageRules": [
+    {
+      "description": "@vercel/og 1.0.2/1.0.3 crash on import due to missing hb.wasm (https://github.com/vercel/satori/issues/801)",
+      "matchPackageNames": ["@vercel/og"],
+      "allowedVersions": "!/^1\\.0\\.[23]$/"
+    }
   ]
 }
