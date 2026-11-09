@@ -10,6 +10,12 @@ permissions:
   pages: write
   id-token: write
 
+# 連続マージ時にPagesデプロイが衝突しないよう直列化する
+# (進行中のデプロイは中断せず完了を待つ)
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
